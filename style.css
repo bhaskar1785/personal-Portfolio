@@ -579,3 +579,16 @@ nav li:first-child {
     background-color: #242424;
     color: white;
 }
+
+.cen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 600px;
+    width: 100%;
+}
+.cen hr{
+    margin: 0 100px;
+    width: 200px;
+}
