@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/personal-Portfolio/style.css">
+    <title>Contact Us - page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+    </style>
+    <link rel="shortcut icon" href="/asset/Untitled.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+                            viewBox="0 -960 960 960" width="26px" fill="#ffffff">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+                <li><a href="/personal-Portfolio/index.html">Home</a></li>
+                <li><a href="/personal-Portfolio/about.html">About</a></li>
+                <li><a href="/personal-Portfolio/blog.html">Blog</a></li>
+                <li><a href="/personal-Portfolio/contact.html">Contact</a></li>
+            </ul>
+            <ul class="meedu">
+                <li><a href="#">Contact</a></li>
+                <li class="hideOnMobile"><a href="/personal-Portfolio/index.html">Home</a></li>
+                <hr class="hideOnMobile">
+                <li class="hideOnMobile"><a href="/personal-Portfolio/about.html">About</a></li>
+                <hr class="hideOnMobile">
+                <li class="hideOnMobile"><a href="/personal-Portfolio/blog.html">Blog</a></li>
+                <hr class="hideOnMobile">
+                <li class="hideOnMobile"><a href="/personal-Portfolio/contact.html">Contact</a></li>
+                <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="26px" viewBox="0 -960 960 960" width="26px" fill="#ffffff">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <hr>
+    <main>
+        <section class="contact-section">
+            <h2>Contact Me</h2>
+            <form class="contact-form" action="https://formspree.io/f/xyzwvqlg" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="copyRights">
+            <p>&copy; 2025 Bhaskar Kumar. All rights reserved.</p>
+            <p><a href="mailto:bhaskar13kumar@gmail.com">Contact Me</a> | <a href="https://github.com/bhaskar1785"
+                    target="_blank">GitHub</a></p>
+        </div>
+    </footer>
+    <script src="/personal-Portfolio/script.js"></script>
+</body>

@@ -1,0 +1,581 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Red Hat Display", sans-serif;
+    color: white;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.938);
+    animation: slideRight 1s ease forwards;
+}
+
+.header {
+    height: 50vh;
+    background: url(/personal-Portfolio/asset/download.gif) center no-repeat;
+    background-size: cover;
+    animation: slideTop .5s ease forwards;
+}
+
+nav {
+    background-color: black;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    transition: .25s;
+}
+
+nav a:hover {
+    background-color: #1d1d1d;
+}
+
+nav hr {
+    height: 20px;
+}
+
+nav li:first-child {
+    margin-right: auto;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 95%;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.507);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 20px;
+    border: 1px solid rgb(51, 51, 51);
+    animation: slideLeft .50s ease forwards;
+}
+
+.sidebar li {
+    width: 100%;
+}
+.sidebar a {
+    width: 180px;
+    border-radius: 100px 100px;
+    margin: 10px;
+}
+
+.menu-button {
+    display: none;
+}
+
+@media(max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+}
+
+.intro {
+    margin-top: 5vh;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(24, 24, 24);
+    flex-direction: column;
+    text-align: center;
+    animation: slideTop .5s ease forwards;
+}
+
+.objpd {
+    margin: 10px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    animation: slideTop .5s ease forwards;
+}
+
+.objpd h2 {
+    margin: 20px;
+    letter-spacing: 5px;
+    animation: slideLeft 1s ease forwards;
+}
+
+.intro img {
+    height: 200px;
+    border-radius: 100%;
+    box-shadow: 0 0 20px white;
+
+
+
+}
+
+.imgPosition {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    background-color: black;
+    padding: 10px;
+    display: flex;
+}
+
+.edu {
+    margin-top: 5vh;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: rgb(24, 24, 24);
+    animation: slideTop .5s ease forwards;
+}
+
+.edu ul {
+    list-style: none;
+}
+
+.edu hr {
+    margin: 10px 5px 20px 5px;
+}
+
+.blog1 {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #333;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.blogItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.first {
+    margin-top: 5vh;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.Know a {
+    height: 100%;
+    padding: 0 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    transition: .25s;
+}
+
+.imgPosition button {
+    background: rgb(255, 255, 255);
+    border: 0;
+    padding: 10px;
+    margin: 30px;
+    border-radius: 10px;
+    transition: .25s;
+    flex-direction: column;
+
+}
+
+.imgPosition button:hover {
+    box-shadow: 0 0 10px white;
+}
+
+.logobox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logobox img {
+    width: 70px;
+}
+
+.Lan .codingLanguageLogoHtml {
+    width: 97px;
+}
+
+.Lan {
+    border: 1px solid #333;
+    padding: 10px;
+    height: 100px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: black;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-top: 1px solid #333;
+    margin-top: 100px;
+}
+
+.footer a {
+    color: #00fae5;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .logobox {
+        flex-direction: column;
+        text-align: center;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .objpd {
+        font-size: 16px;
+
+    }
+}
+
+@media (max-width: 786px) {
+    .headerText {
+        margin: 20x 30px 30px 30px;
+    }
+}
+
+.projects {
+    margin-top: 5vh;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background: url(/personal-Portfolio/asset/jmp.jpg) center center;
+    background-size: cover;
+}
+
+.project {
+    margin-top: 5vh;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid #ffffff;
+    transition: .25s;
+}
+
+.project:hover {
+    background: rgba(0, 0, 0, 0.541);
+}
+
+.project a:hover {
+    color: #00fae5;
+}
+
+.BlogPost {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 5vh;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 40px 20px;
+    border-radius: 20px;
+    background-color: rgb(24, 24, 24);
+
+}
+
+.secretProject {
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    cursor: pointer;
+}
+
+.secretProject a {
+    color: rgba(0, 0, 0, 0);
+    text-decoration: none;
+}
+
+.upper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.lower {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.per {
+    width: 200px;
+    height: 10px;
+    background-color: rgb(43, 43, 43);
+    border: 0;
+    border-radius: 10px;
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+
+}
+
+.perhtml {
+    width: 180px;
+    height: 10px;
+    background: linear-gradient(to right, blue, red);
+    border: 0;
+    border-radius: 10px;
+    margin: 20px 0px;
+    animation: slideRight 1s ease forwards;
+}
+
+.percss {
+    width: 140px;
+    height: 10px;
+    background: linear-gradient(to right, blue, red);
+    border: 0;
+    border-radius: 10px;
+    margin: 20px 0px;
+    animation: slideRight 1s ease forwards;
+}
+
+.perjs {
+    width: 130px;
+    height: 10px;
+    background: linear-gradient(to right, blue, red);
+    border: 0;
+    border-radius: 10px;
+    margin: 20px 0px;
+    animation: slideRight 1s ease forwards;
+}
+
+.pernode {
+    width: 40px;
+    height: 10px;
+    background: linear-gradient(to right, blue, red);
+    border: 0;
+    border-radius: 10px;
+    margin: 20px 0px;
+    animation: slideRight 1s ease forwards;
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.headerText {
+    margin: 40px 10px 20px 40px;
+}
+
+.headerText h1 {
+    font-size: 50px;
+}
+
+.headerText h2 {
+    font-size: 30px;
+}
+@media (max-width: 768px) {
+.headerText h1 {
+    font-size: 30px;
+}
+.headerText{
+    margin-top: 40px;
+}
+.headerText h2 {
+    font-size: 25px;
+}
+}
+
+
+.secButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 50px 10px 50px;
+}
+
+.secButton button {
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    border: 0;
+    background: rgb(26, 26, 26);
+    transition: .25s;
+}
+
+.secButton button:hover {
+    background: rgb(71, 71, 71);
+}
+
+.secButton button a {
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#element{
+    color: rgb(72, 255, 0);
+    font-weight: 900;
+}
+.contact-section {
+    background-color: rgb(24, 24, 24);
+    box-shadow: 0 0 12px black;
+    margin: 5vh 20px;
+    padding: 40px 20px;
+    border-radius: 20px;
+    animation: slideTop .5s ease forwards;
+    text-align: center;
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: #00fae5;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    background-color: #2a2a2a;
+}
+
+.contact-form button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #535353;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.contact-form button:hover {
+    background-color: #242424;
+    color: white;
+}
