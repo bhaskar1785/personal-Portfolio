@@ -415,6 +415,24 @@ nav li:first-child {
     margin: 20px 0px;
     animation: slideRight 1s ease forwards;
 }
+.pergit {
+    width: 170px;
+    height: 10px;
+    background: linear-gradient(to right, blue, red);
+    border: 0;
+    border-radius: 10px;
+    margin: 20px 0px;
+    animation: slideRight 1s ease forwards;
+}
+.pergithub {
+   width: 170px;
+    height: 10px;
+    background: linear-gradient(to right, blue, red);
+    border: 0;
+    border-radius: 10px;
+    margin: 20px 0px;
+    animation: slideRight 1s ease forwards;
+}
 
 @keyframes slideTop {
     0% {
